@@ -29,6 +29,18 @@ const Test = () => {
   title: {
     text: 'Artist'
   },
+
+  plotOptions: {
+    series: {
+      cursor: 'pointer',
+        events: {
+          click: function (event) {
+              console.log(event);
+          }
+        }
+      }
+  },
+
   series: [{
         type: "wordcloud",
         data: artist
